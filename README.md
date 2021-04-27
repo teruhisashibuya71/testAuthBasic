@@ -1,0 +1,2 @@
+# testAuthBasic
+Basic認証を使用したテストプロジェクトのデプロイテスト
