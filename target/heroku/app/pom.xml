@@ -63,7 +63,7 @@
                 <configuration>
                     <!--Mainクラスを使用してWebプロセスを開始する記述 procfileで代用することも可能 -->
                     <processTypes>
-                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* SampleApplication</web>
                     </processTypes>
                 </configuration>
             </plugin>
