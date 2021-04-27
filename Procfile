@@ -1,1 +1,2 @@
-web: java -jar target/sample-0.0.1.jar
+web: java $JAVA_OPTS -jar target/*.jar --server.port=$PORT --
+spring.profiles.active=heroku 
