@@ -55,7 +55,20 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<!--herokuデプロイ用プラグイン -->
+			<plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>2.0.11</version>
+                <configuration>
+                    <!--Mainクラスを使用してWebプロセスを開始する記述 procfileで代用することも可能 -->
+                    <processTypes>
+                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+                    </processTypes>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
+	
 
 </project>
